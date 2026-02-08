@@ -1,0 +1,77 @@
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a5568;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #718096;
+}
+
+/* Smooth transitions */
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(to right, #ffffff, #d1d5db, #9ca3af);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glow effect for cards */
+.card-glow {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-glow:hover {
+  box-shadow: 0 0 20px rgba(200, 200, 200, 0.3), 0 0 40px rgba(150, 150, 150, 0.1);
+}
+
+/* Glow effect for form inputs */
+.input-glow {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-glow:focus {
+  box-shadow: 0 0 15px rgba(200, 200, 200, 0.25), inset 0 0 10px rgba(100, 100, 100, 0.1);
+  border-color: rgba(200, 200, 200, 0.5);
+}
+
+/* Glow effect for buttons */
+.button-glow {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.button-glow:hover {
+  box-shadow: 0 0 20px rgba(200, 200, 200, 0.4), 0 0 40px rgba(150, 150, 150, 0.2);
+}
+
+.button-glow:focus {
+  box-shadow: 0 0 20px rgba(200, 200, 200, 0.4), 0 0 40px rgba(150, 150, 150, 0.2);
+}
