@@ -4,7 +4,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { useState } from 'react'
 import { Lock, Mail, Phone, User as UserIcon } from 'lucide-react'
 
-const User = () => {
+const Account = () => {
   const [isLogin, setIsLogin] = useState(true)
   const [formData, setFormData] = useState({
     email: '',
@@ -29,15 +29,15 @@ const User = () => {
   }
 
   return (
-    <div className='bg-black text-white min-h-screen flex flex-col'>
+    <div className='bg-page text-white flex flex-col'>
       <div className='flex-1 flex flex-col items-center justify-center p-8 py-20'>
         <div className='w-full max-w-md'>
         
           <div className='text-center mb-8 space-y-2'>
-            <h1 className='text-4xl lg:text-5xl font-bold bg-linear-to-r from-white via-gray-300 to-gray-500 bg-clip-text text-transparent'>
+            <h1 className='text-4xl lg:text-5xl font-bold bg-linear-to-r from-white via-gray-300 to-gray-500 bg-clip-text text-transparent '>
               Cosmc Technologies
             </h1>
-            <p className='text-gray-400'>Welcome to our platform</p>
+            <p className='text-gray-300 mt-2'>Welcome to our platform</p>
           </div>
 
           <div className='flex gap-4 mb-8'>
@@ -245,4 +245,4 @@ const User = () => {
   )
 }
 
-export default User
+export default Account
