@@ -8,9 +8,7 @@ const Services = () => {
   return (
   
     <div className='w-full bg-page'>
-    
-
-      {/* Services Grid */}
+  
       <section className='relative py-24 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-slate-900/50 to-purple-950/40 z-20'>
         <div className='max-w-6xl mx-auto'>
           <h2 className='text-4xl md:text-5xl font-black text-center mb-20 bg-linear-to-r from-white to-blue-200 bg-clip-text text-transparent'>
@@ -33,7 +31,7 @@ const Services = () => {
               </ul>
             </div>
 
-            {/* Cloud Solutions */}
+     
             <div className='group p-8 rounded-2xl border border-purple-500/20 bg-linear-to-br from-purple-500/10 to-blue-500/5 hover:border-purple-500/40 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/20 cursor-pointer '>
               <div className='w-16 h-16 mb-6 bg-linear-to-br from-purple-600 to-indigo-600 rounded-xl flex items-center justify-center text-white group-hover:scale-110 group-hover:rotate-6 transition-transform'>
                 <Cloud size={32} />
@@ -48,7 +46,7 @@ const Services = () => {
               </ul>
             </div>
 
-            {/* Consulting */}
+        
             <div className='group p-8 rounded-2xl border border-purple-500/20 bg-linear-to-br from-purple-500/10 to-blue-500/5 hover:border-purple-500/40 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/20 cursor-pointer'>
               <div className='w-16 h-16 mb-6 bg-linear-to-br from-purple-600 to-indigo-600 rounded-xl flex items-center justify-center text-white group-hover:scale-110 group-hover:rotate-6 transition-transform'>
                 <TrendingUp size={32} />
@@ -63,7 +61,7 @@ const Services = () => {
               </ul>
             </div>
 
-            {/* Support & Maintenance */}
+           
             <div className='group p-8 rounded-2xl border border-purple-500/20 bg-linear-to-br from-purple-500/10 to-blue-500/5 hover:border-purple-500/40 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/20 cursor-pointer'>
               <div className='w-16 h-16 mb-6 bg-linear-to-br from-purple-600 to-indigo-600 rounded-xl flex items-center justify-center text-white group-hover:scale-110 group-hover:rotate-6 transition-transform'>
                 <Headphones size={32} />
@@ -81,7 +79,7 @@ const Services = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
+    
       <section className='relative py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-purple-950/40 to-slate-950 border-t border-purple-500/20 z-20'>
         <div className='max-w-2xl mx-auto text-center'>
           <h2 className='text-3xl md:text-4xl font-black text-white mb-4'>

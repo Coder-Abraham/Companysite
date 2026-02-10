@@ -135,7 +135,7 @@ const Contact: React.FC = () => {
     }, 3000);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLinputE.ent | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
 
@@ -314,8 +314,8 @@ const Contact: React.FC = () => {
                         type="submit" 
                         size="lg" 
                         className="w-full gap-2"
-                        disabled={isSubmitting}
-                      className='bg-blue-600 hover:bg-blue-700 text-white'
+                        disabled={isSubmitting} 
+                       className ='bg-blue-600 hover:bg-blue-700 text-white'
 
                       >
                         {isSubmitting ? (
@@ -337,7 +337,7 @@ const Contact: React.FC = () => {
 
           
             <div className="space-y-8">
-              {/* Contact Info Cards */}
+          
               <div className="space-y-6">
                 <h2 className="text-2xl font-bold text-white mb-6">
                   Contact Information
@@ -370,7 +370,7 @@ const Contact: React.FC = () => {
                 ))}
               </div>
 
-              {/* Departments */}
+          
               <div>
                 <h2 className="text-2xl font-bold text-white mb-6">
                   Contact by Department

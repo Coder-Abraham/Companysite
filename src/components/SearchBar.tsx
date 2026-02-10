@@ -103,7 +103,7 @@ const SearchBar: React.FC = () => {
         </div>
       </form>
 
-      {/* Results Dropdown */}
+   
       {isOpen && results.length > 0 && (
         <div className='absolute top-full left-0 right-0 mt-2 max-h-96 overflow-y-auto bg-slate-900/95 border border-purple-500/30 rounded-lg shadow-2xl shadow-purple-500/20 backdrop-blur-sm z-50'>
           <div className='p-2'>
@@ -136,7 +136,6 @@ const SearchBar: React.FC = () => {
         </div>
       )}
 
-      {/* No Results */}
       {isOpen && query && results.length === 0 && (
         <div className='absolute top-full left-0 right-0 mt-2 bg-slate-900/95 border border-purple-500/30 rounded-lg shadow-2xl shadow-purple-500/20 backdrop-blur-sm z-50 p-4 text-center'>
           <p className='text-slate-400 text-sm'>No results found for "{query}"</p>

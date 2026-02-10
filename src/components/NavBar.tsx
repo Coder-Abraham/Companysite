@@ -14,25 +14,25 @@ const NavBar = () => {
     { label: 'About', path: '/about', icon: User },
     { label: 'Services', path: '/Services', icon: BookOpen },
     { label: 'Contact', path: '/contact', icon: Phone },
-     { label: 'Education', path: '/Education', icon: BookOpen },
+     { label: 'Lessons', path: '/Lessons', icon: BookOpen },
   ]
 
   return (
     <nav className='fixed top-0 w-full bg-linear-to-r from-slate-950 via-slate-900 to-purple-950 border-b border-purple-500/20 z-40 backdrop-blur-sm'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex justify-between items-center h-16'>
-          {/* Logo */}
+          
           <div className='shrink-0 flex items-center gap-3 cursor-pointer' onClick={() => navigate('/')}>
             <img src={Logo} alt='Logo' className='h-10 w-10 rounded-full' />
-            <span className='text-white font-bold text-xl hidden sm:inline'>CosmcTech</span>
+            <span className='text-white font-bold text-xl hidden sm:inline md:inline'>CosmcTech</span>
           </div>
 
-          {/* Search Bar - Desktop */}
+        
           <div className='hidden md:block flex-1 mx-8'>
             <SearchBar />
           </div>
 
-          {/* Desktop Navigation */}
+       
           <div className='hidden md:flex items-center gap-1'>
             {navLinks.map((link) => (
               <Button
@@ -47,7 +47,7 @@ const NavBar = () => {
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
+        
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className='md:hidden p-2 rounded-lg hover:bg-purple-500/10 text-slate-300 transition-colors'
@@ -56,15 +56,14 @@ const NavBar = () => {
           </button>
         </div>
 
-        {/* Mobile Menu */}
+      
         {isMenuOpen && (
           <div className='md:hidden pb-4 border-t border-purple-500/10'>
-            {/* Mobile Search */}
+        
             <div className='mb-4 pt-4'>
               <SearchBar />
             </div>
 
-            {/* Mobile Navigation Links */}
             <div className='flex flex-col gap-2'>
               {navLinks.map((link) => (
                 <button

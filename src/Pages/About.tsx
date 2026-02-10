@@ -205,7 +205,7 @@ const AboutPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Team Section */}
+ 
       <section className="py-20">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-16">

@@ -5,7 +5,8 @@ import About from './Pages/About'
 import Services from './Pages/Services'
 import Contact from './Pages/Contact'
 import Account from './Pages/Account'
-import Education from './Pages/Education'
+import Lessons from './Pages/Lessons'
+
 
 
 function App() {
@@ -18,8 +19,9 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/Services' element={<Services />} />
           <Route path='/Contact' element={<Contact />} />
-           <Route path='/Academics' element={<Education />} />
+        
           <Route path='/Account' element={<Account />} />
+          <Route path='/Lessons' element={<Lessons />} />
         </Routes>
       </div>
     </>

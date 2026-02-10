@@ -1,5 +1,5 @@
 import firstImage from '../assets/bg7.jpg'
-import { Zap, Shield, Rocket, Star, ChevronRight, Cloud, Code, Globe, Lock } from 'lucide-react'
+import { Zap, Shield, Rocket, Star, ChevronRight } from 'lucide-react'
 import Footer from '@/components/Footer'
 import { useNavigate } from 'react-router-dom'
 import { Card } from '@/components/ui/card'
